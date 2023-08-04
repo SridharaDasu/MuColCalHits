@@ -16,6 +16,7 @@ To get this repository to your area, use:
 
 ```
 git clone git@github.com:SridharaDasu/MuColCalHits.git
+cd MuColCalHits
 ```
 
 To get the big H->b,b data to your machine, 
