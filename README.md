@@ -16,6 +16,7 @@ To get this repository to your area, use:
 
 ```
 git clone git@github.com:SridharaDasu/MuColCalHits.git
+cd MuColCalHits
 ```
 
 To get the big H->b,b data to your machine, 
@@ -23,12 +24,14 @@ To get the big H->b,b data to your machine,
 * if on `cms01` or `mucol01`, do:
 
 ```
+ln -s /nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumi_000_edm4hep.root .
 ln -s /nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumu_H_bb_3TeV_sim_edm4hep.root .
 ```
 
 * in case you are running on personal machine, use:
 
 ```
+scp cms01.hep.wisc.edu:/nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumi_000_edm4hep.root .
 scp cms01.hep.wisc.edu:/nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumu_H_bb_3TeV_sim_edm4hep.root .
 ```
 
@@ -53,3 +56,7 @@ Both files should have the same information as both are files created by the muo
 The mumi_000 file has a fraction of beam induced background from negative muons.
 
 The mumu_H_bb_3TeV file has Higgs to b-quark pair signal events.
+
+## Wisc VPN
+
+https://kb.wisc.edu/page.php?id=90370
