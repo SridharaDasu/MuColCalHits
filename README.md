@@ -7,20 +7,20 @@ The machines available to work in the `hep.wisc.edu` cluster are:
 `login04` (AlmaLinux8) - accessible from WAN.
 
 ```
-ssh -t -Y <your hep.wisc.edu user name>@login04.hep.wisc.edu
+ssh -t -Y <your_hep.wisc.edu_user_name>@login04.hep.wisc.edu
 ```
 
 
-`cms01` (AlmaLinux8) - requires setup of Wisc VPN or indirection through above machines.
+`cms01` (AlmaLinux8) - requires setup of Wisc VPN **or** indirection through above machines. You will be prompted for password twice unless you have setup appropriate .ssh configuration.
 
 ```
-ssh -t -Y <your hep.wisc.edu user name>@login04.hep.wisc.edu ssh -Y cms01
+ssh -t -Y <your_hep.wisc.edu_user_name>@login04.hep.wisc.edu ssh -Y cms01
 ```
 
-`mucol01` (Almalinux9) - requires setup of Wisc VPN or indirection through above machines.
+`mucol01` (Almalinux9) - requires setup of Wisc VPN **or** indirection through above machines. You will be prompted for password twice unless you have setup appropriate .ssh configuration.
 
 ```
-ssh -t -Y <your hep.wisc.edu user name>@login04.hep.wisc.edu ssh -Y mucol01
+ssh -t -Y <your_hep.wisc.edu_user_name>@login04.hep.wisc.edu ssh -Y mucol01
 ```
 
 To login to `hep.wisc.edu` cluster, use:
@@ -48,8 +48,8 @@ ln -s /nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumu_H_bb_3TeV_si
 * in case you are running on personal machine, use:
 
 ```
-scp <your hep.wisc.edu user name>@login04.hep.wisc.edu:/nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumi_000_edm4hep.root .
-scp <your hep.wisc.edu user name>@login04.hep.wisc.edu:/nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumu_H_bb_3TeV_sim_edm4hep.root .
+scp <your_hep.wisc.edu_user_name>@login04.hep.wisc.edu:/nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumi_000_edm4hep.root .
+scp <your_hep.wisc.edu_user_name>@login04.hep.wisc.edu:/nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumu_H_bb_3TeV_sim_edm4hep.root .
 ```
 
 If working on `hep.wisc.edu` machines `python3, upwork, numpy, matplotlib` should be available on `cms01` and `mucol01`.
