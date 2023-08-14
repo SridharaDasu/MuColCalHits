@@ -6,30 +6,25 @@ The machines available to work in the `hep.wisc.edu` cluster are:
 
 `login04` (AlmaLinux8) - accessible from WAN.
 
+To login to `hep.wisc.edu` cluster, use:
+
 ```
 ssh -t -Y <your_hep.wisc.edu_user_name>@login04.hep.wisc.edu
 ```
 
-
-`cms01` (AlmaLinux8) - requires setup of Wisc VPN **or** indirection through above machines. You will be prompted for password twice unless you have setup appropriate .ssh configuration.
+A better machine to use is the `cms01` (AlmaLinux8) - However, it requires setup of Wisc VPN **or** indirection through above machines. You will be prompted for password twice unless you have setup appropriate .ssh configuration.
 
 ```
 ssh -t -Y <your_hep.wisc.edu_user_name>@login04.hep.wisc.edu ssh -Y cms01
 ```
 
-`mucol01` (Almalinux9) - requires setup of Wisc VPN **or** indirection through above machines. You will be prompted for password twice unless you have setup appropriate .ssh configuration.
+Another option is to use `mucol01` (Almalinux9) - which also requires setup of Wisc VPN **or** indirection through above machines. You will be prompted for password twice unless you have setup appropriate .ssh configuration.
 
 ```
 ssh -t -Y <your_hep.wisc.edu_user_name>@login04.hep.wisc.edu ssh -Y mucol01
 ```
 
-To login to `hep.wisc.edu` cluster, use:
-
-```
-ssh <user-name>@login04.hep.wisc.edu
-```
-
-To get this repository to your area, use:
+To get this repository to your area, either on personal machine or one of the above, use:
 
 ```
 git clone git@github.com:SridharaDasu/MuColCalHits.git
@@ -45,7 +40,7 @@ ln -s /nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumi_000_edm4hep.
 ln -s /nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumu_H_bb_3TeV_sim_edm4hep.root .
 ```
 
-* in case you are running on personal machine, use:
+* in case you are running on personal machine, noting you need lots of space on your disk, you can use:
 
 ```
 scp <your_hep.wisc.edu_user_name>@login04.hep.wisc.edu:/nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumi_000_edm4hep.root .
