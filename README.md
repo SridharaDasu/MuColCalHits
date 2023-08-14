@@ -57,6 +57,20 @@ The mumi_000 file has a fraction of beam induced background from negative muons.
 
 The mumu_H_bb_3TeV file has Higgs to b-quark pair signal events.
 
+Couple of simple plots to make are the XY and RZ hit plots - you can make them using:
+
+```
+python plot_xy.py mumi_000_edm4hep.root
+python plot_xy.py mumu_H_bb_3TeV_sim_edm4hep.root
+python plot_rz.py mumi_000_edm4hep.root
+python plot_rz.py mumu_H_bb_3TeV_sim_edm4hep.root
+```
+Here is how they should look for the Hbb file:
+
+![plot](x-y-hits.png)
+
+![plot](r-z-hits.png)
+
 ## Wisc VPN
 
 https://kb.wisc.edu/page.php?id=90370
