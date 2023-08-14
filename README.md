@@ -2,7 +2,7 @@
 
 The machines available to work in the `hep.wisc.edu` cluster are:
 
-`login01, login02, login03, login04` (EL7) - generically login.hep.wisc.edu with WAN access.
+`login01, login02, login03` (EL7) - generically login.hep.wisc.edu with WAN access.
 
 `login04` (AlmaLinux8) - accessible from WAN.
 
