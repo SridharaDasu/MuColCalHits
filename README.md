@@ -1,5 +1,9 @@
 # MuColCalHits
 
+This package is for accessing muon collider simulation GEANT4 hits root file which is prepared by using lcio to edm4hep root file. Some simple python to make evevent dump and plots is also provided.
+
+## Work environment:
+
 The machines available to work in the `hep.wisc.edu` cluster are:
 
 `login01, login02, login03` (EL7) - generically login.hep.wisc.edu with WAN access.
