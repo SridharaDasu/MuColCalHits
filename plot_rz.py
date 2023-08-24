@@ -30,7 +30,7 @@ rHits = np.sqrt(xHits * xHits + yHits * yHits)
 
 fig, ax = plt.subplots(ncols=1)
 fig.subplots_adjust(hspace=0.5, left=0.07, right=0.93)
-hb = ax.hexbin(rHits, zHits, gridsize=100, cmap='YlGn')
+hb = ax.hexbin(zHits, rHits, gridsize=100, cmap='YlGn')
 ax.set_title("Hexagon binned calo hits: r vs z")
 cb = fig.colorbar(hb, ax=ax)
 cb.set_label('counts')
