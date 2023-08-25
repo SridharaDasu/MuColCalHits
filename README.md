@@ -2,7 +2,34 @@
 
 This package is for accessing muon collider simulation GEANT4 hits root file which is prepared by using lcio to edm4hep root file. Some simple python to make evevent dump and plots is also provided.
 
-## Work environment:
+## Work environment - JupyterHUB
+
+Open your instance of JupyterHub on your browser using using: https://cms01.hep.wisc.edu:8000/
+
+After your server starts open a console.
+
+The first time you work copy and paste the following commands:
+
+```
+git clone https://github.com/SridharaDasu/MuColCalHits.git
+cd MuColCalHits
+ln -s /nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumi_000_edm4hep.root .
+ln -s /nfs_scratch/dasu/MuonCollider/mucoll-benchmarks/edm4hep/mumu_H_bb_3TeV_sim_edm4hep.root .
+```
+
+On future restarts of server, you need to:
+
+```
+cd MuColCaloHits
+```
+
+Edit plot_xy.py and plot_rz.py and remove `import sys` and `try ... Exception` and use just the input_file = "mumu_H_bb_3TeV_sim_edm4hep.root". 
+
+Create a new notebook and paste the contents of plot_xy.py in it. You should see the x-y plot. Similarly, the plot_rz.py should work.
+
+You can then do your real work!
+
+## Work environment - CLI style:
 
 The machines available to work in the `hep.wisc.edu` cluster are:
 
